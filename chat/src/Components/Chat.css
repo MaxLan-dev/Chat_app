@@ -1,0 +1,132 @@
+.chat-container {
+    padding: 20px;
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+:root {
+    --primary-color: #333333;
+    --secondary-color: #f2f2f2;
+    --tertiary-color: #add8e6;
+  }
+input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.chat-container.dark-theme {
+    background-color: #333333;
+    color: #f2f2f2;
+}
+
+.chat-container.white-theme {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+button {
+    border: none;
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .white-theme {
+    background-color: #fff;
+    color: #333;
+  }
+.message-container {
+    max-height: 50vh;
+    padding-top: 50px;
+    overflow-y: auto;
+    min-height: 50px;}
+
+  
+
+.message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:10px;
+}
+.form-container {
+    position: fixed;
+    bottom: 0;
+   }
+    
+
+.message-info {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.message-status {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fa-sun, .fa-moon {
+    color: #fff;
+  }
+  
+  .white-theme .fa-sun, .white-theme .fa-moon {
+    color: #000;
+  }
+
+
+.not-seen {
+    background-color: #e5e5e5;
+}
+
+@media (min-width: 600px) {
+    input{
+        width: 50%;
+    }
+    .message-container {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+.sent-message {
+    background-color: #add8e6;
+    }
+    
